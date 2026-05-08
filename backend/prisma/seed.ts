@@ -60,6 +60,15 @@ const products = [
 async function main() {
   console.log('Starting seed...');
 
+  await prisma.$transaction([
+    prisma.cartItem.deleteMany(),
+    prisma.orderItem.deleteMany(),
+    prisma.cart.deleteMany(),
+    prisma.order.deleteMany(),
+    prisma.user.deleteMany(),
+    prisma.product.deleteMany(),
+  ]);
+
   await prisma.user.createMany({
     data: [
       { email: 'admin@gamestore.com', password: 'admin123', name: 'Admin User', role: 'admin' },
