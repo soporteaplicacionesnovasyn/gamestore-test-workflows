@@ -20,13 +20,17 @@ export const authenticate = (req: AuthRequest, res: Response, next: NextFunction
     req.userId = decoded.userId;
     req.userRole = decoded.role;
     next();
-  } catch {
+  } catch (err) {
+    if (err instanceof jwt.TokenExpiredError) {
+      return res.status(401).json({ error: 'Token expired' });
+    }
     return res.status(401).json({ error: 'Invalid token' });
   }
 };
 
 export const generateToken = (userId: number, role: string) => {
-  return jwt.sign({ userId, role }, JWT_SECRET, { expiresIn: '15m' });
+  const expiresIn = (process.env.JWT_EXPIRES_IN || '24h') as string;
+  return jwt.sign({ userId, role }, JWT_SECRET, { expiresIn } as jwt.SignOptions);
 };
 
 export const generateRefreshToken = (userId: number) => {

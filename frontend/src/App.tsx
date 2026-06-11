@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { Navbar } from './components/Navbar';
+import { SessionExpiredNotification } from './components/SessionExpiredNotification';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Products } from './pages/Products';
@@ -28,6 +29,7 @@ const AppRoutes = () => {
     <BrowserRouter>
       <AuthProvider>
         <CartProvider>
+          <SessionExpiredNotification />
           <Navbar />
           <Routes>
             <Route path="/" element={<Navigate to="/products" />} />

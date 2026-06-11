@@ -19,9 +19,19 @@ export const clearTokens = () => {
 
 export const getToken = () => authToken;
 
-const handleUnauthorized = () => {
+let onSessionExpired: ((message: string) => void) | null = null;
+
+export const setSessionExpiredHandler = (handler: (message: string) => void) => {
+  onSessionExpired = handler;
+};
+
+const handleUnauthorized = (message = 'Session expired. Please log in again.') => {
   clearTokens();
-  window.location.href = '/login';
+  if (onSessionExpired) {
+    onSessionExpired(message);
+  } else {
+    window.location.href = '/login';
+  }
 };
 
 const fetchWithAuth = async (endpoint: string, options: RequestInit = {}) => {
@@ -36,24 +46,32 @@ const fetchWithAuth = async (endpoint: string, options: RequestInit = {}) => {
 
   let response = await fetch(`${API_URL}${endpoint}`, { ...options, headers });
 
-  if (response.status === 401 && refreshToken) {
-    try {
-      const refreshResponse = await fetch(`${API_URL}/auth/refresh`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ refreshToken })
-      });
+  if (response.status === 401) {
+    const body = await response.clone().json().catch(() => ({}));
+    if (body.error === 'Token expired') {
+      handleUnauthorized('Your session has expired. Please log in again.');
+      return response;
+    }
 
-      if (refreshResponse.ok) {
-        const data = await refreshResponse.json();
-        setTokens(data.token, data.refreshToken);
-        headers['Authorization'] = `Bearer ${data.token}`;
-        response = await fetch(`${API_URL}${endpoint}`, { ...options, headers });
-      } else {
+    if (refreshToken) {
+      try {
+        const refreshResponse = await fetch(`${API_URL}/auth/refresh`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ refreshToken })
+        });
+
+        if (refreshResponse.ok) {
+          const data = await refreshResponse.json();
+          setTokens(data.token, data.refreshToken);
+          headers['Authorization'] = `Bearer ${data.token}`;
+          response = await fetch(`${API_URL}${endpoint}`, { ...options, headers });
+        } else {
+          handleUnauthorized();
+        }
+      } catch {
         handleUnauthorized();
       }
-    } catch {
-      handleUnauthorized();
     }
   }
 
