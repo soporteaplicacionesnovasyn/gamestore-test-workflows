@@ -1,0 +1,126 @@
+{
+  "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql": {
+    "mtime": 1780949250061.0198,
+    "hash": "f824da3d4ba350dd95867a0a4609977b"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts": {
+    "mtime": 1780949250103.0742,
+    "hash": "98ab259038b6b9845b0189351747e730"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts": {
+    "mtime": 1780949250116.3826,
+    "hash": "41d2cb19ffd276cd6f7abc6b6f50a4f4"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts": {
+    "mtime": 1780949250121.9243,
+    "hash": "4c6a975ebdcd57ee3628eb499c1773ee"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts": {
+    "mtime": 1780949250127.4812,
+    "hash": "4021b4344ffc03fe670b1e5ee49d5331"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts": {
+    "mtime": 1780949250131.576,
+    "hash": "3eb5e369b41329e2e6934b4c12454d04"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts": {
+    "mtime": 1780949250137.1204,
+    "hash": "2cf355358a1e7589927a7528a76dc56d"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts": {
+    "mtime": 1780949250141.6526,
+    "hash": "cdca81b86b3355bbeea711bee7c9852e"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts": {
+    "mtime": 1780949250148.2021,
+    "hash": "dff43e460b4bd9837a26edd733f91415"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\postcss.config.js": {
+    "mtime": 1780949250179.283,
+    "hash": "c76714d5754a5c3fbcc87b2bba27efcc"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx": {
+    "mtime": 1780949250182.7834,
+    "hash": "022f21a4780937b7cbb7b951d6c435b5"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx": {
+    "mtime": 1780949250187.3333,
+    "hash": "1bf0656ce04bd397bddb92c39e1df2dc"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx": {
+    "mtime": 1780949250192.8965,
+    "hash": "a33bbe943516b63bc7e2a6cf9f21437a"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx": {
+    "mtime": 1780949250196.4211,
+    "hash": "7ac0ae9be417ce85b280fe5bebc241f1"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\main.tsx": {
+    "mtime": 1780949250214.1458,
+    "hash": "21cd323c7c2cf3f1979f3716be83373d"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx": {
+    "mtime": 1780949250226.2058,
+    "hash": "f907baa017723aec760155f0f894554c"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx": {
+    "mtime": 1780949250238.2876,
+    "hash": "42ae8b8ebf58ae7b1441ff2390c81de0"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx": {
+    "mtime": 1780949250246.191,
+    "hash": "bc356fcaede3e4e4f3be12d1b7b7bf8d"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx": {
+    "mtime": 1780949250255.3945,
+    "hash": "98e1f5800ce91127416f7d88c96cbfcf"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx": {
+    "mtime": 1780949250262.9285,
+    "hash": "2836ca97c8171e4107c2a01933101e35"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx": {
+    "mtime": 1780949250270.028,
+    "hash": "c98bbb3a740218f0c0ae5f0bb52dba70"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts": {
+    "mtime": 1780949250277.0276,
+    "hash": "6f0e99b03b8a72f926b73d66061ab550"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\tailwind.config.js": {
+    "mtime": 1780949250282.5725,
+    "hash": "37ec1ee3d08dc1e33fa33fc75672b538"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\vite.config.ts": {
+    "mtime": 1780949250306.3235,
+    "hash": "03a7a3237b286e80b0c8c152eb402941"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\AGENTS.md": {
+    "mtime": 1780956868986.932,
+    "hash": "e0ffc5cb09a55265b762a00b8fca2910"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\frontend\\index.html": {
+    "mtime": 1780949250158.3145,
+    "hash": "7b166207ad6911fea159b31f62c66620"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\openspec\\config.yaml": {
+    "mtime": 1780952884069.224,
+    "hash": "9e3e7672b387a282583011181ab35f9a"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\openspec\\specs\\auth\\spec.md": {
+    "mtime": 1780953765814.5293,
+    "hash": "271f64ef137c49291ebb03769a59b02d"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\openspec\\specs\\catalog\\spec.md": {
+    "mtime": 1780953779812.334,
+    "hash": "2f262e9f55b0dcc4b277af2e5868e54c"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\README.md": {
+    "mtime": 1780949250006.0813,
+    "hash": "08c12bb9b55073ce42ee0ea42283a64d"
+  },
+  "C:\\Users\\User\\gamestore-workshop\\openspec\\templates\\spec-template.md": {
+    "mtime": 1780957616123.9548,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  }
+}

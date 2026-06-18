@@ -16,7 +16,6 @@ Users SHALL browse products in pages of 10 items.
 - **WHEN** a user requests page 2
 - **THEN** products 11-20 are returned
 
-**KNOWN BUG:** Page 2 returns the same products as page 1.
 
 ### Requirement: Price Filter
 Users SHALL filter products by price range.

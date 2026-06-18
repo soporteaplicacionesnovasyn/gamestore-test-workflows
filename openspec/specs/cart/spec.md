@@ -16,8 +16,6 @@ Users SHALL add products to their shopping cart to prepare for purchase.
 - **WHEN** a user clicks "Add to Cart" on a product already in their cart
 - **THEN** the quantity of that item is incremented by 1
 
-**KNOWN BUG:** Adding a duplicate item creates a separate cart entry instead of incrementing the existing item's quantity.
-
 ### Requirement: Cart Persistence
 Users SHALL retain cart contents across page reloads and sessions.
 

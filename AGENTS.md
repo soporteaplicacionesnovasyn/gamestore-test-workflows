@@ -25,7 +25,6 @@ cd frontend; npm install; npm run dev
 - Entrypoint: `src/index.ts` — Express app, dev server via `ts-node-dev --respawn --transpile-only`
 - Routes at `/api/auth`, `/api/products`, `/api/cart`, `/api/orders`, `/api/admin`
 - Price is stored as `String` in SQLite — comparisons are lexical, not numeric (intentional bug)
-- `skip: 0` hardcoded in products route pagination (intentional bug, page 2 returns same as page 1)
 - Passwords stored in plain text; JWT secret hardcoded in `src/middleware/auth.ts:4`
 - Prisma schema at `prisma/schema.prisma`; SQLite DB at `prisma/dev.db`
 

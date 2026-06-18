@@ -8,7 +8,7 @@ interface Product {
   id: number;
   name: string;
   description: string;
-  price: string;
+  price: number;
   image: string;
   stock: number;
   category: string;
@@ -21,12 +21,14 @@ export const Products = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [category, setCategory] = useState('');
   const [sort, setSort] = useState('');
+  const [minPrice, setMinPrice] = useState('');
+  const [maxPrice, setMaxPrice] = useState('');
   const { addItem } = useCart();
   const { user } = useAuth();
 
   useEffect(() => {
     loadProducts();
-  }, [page, category, sort]);
+  }, [page, category, sort, minPrice, maxPrice]);
 
   const loadProducts = async () => {
     setLoading(true);
@@ -34,6 +36,8 @@ export const Products = () => {
       const params: any = { page, limit: 10 };
       if (category) params.category = category;
       if (sort) params.sort = sort;
+      if (minPrice) params.minPrice = minPrice;
+      if (maxPrice) params.maxPrice = maxPrice;
       
       const data = await api.products.getAll(params);
       setProducts(data.products || []);
@@ -79,6 +83,25 @@ export const Products = () => {
           <option value="price_asc">Price: Low to High</option>
           <option value="price_desc">Price: High to Low</option>
         </select>
+
+        <input
+          type="number"
+          placeholder="Min Price"
+          value={minPrice}
+          onChange={e => { setMinPrice(e.target.value); setPage(1); }}
+          className="border p-2 rounded w-32"
+          min="0"
+          step="0.01"
+        />
+        <input
+          type="number"
+          placeholder="Max Price"
+          value={maxPrice}
+          onChange={e => { setMaxPrice(e.target.value); setPage(1); }}
+          className="border p-2 rounded w-32"
+          min="0"
+          step="0.01"
+        />
       </div>
 
       {loading ? (

@@ -22,15 +22,20 @@ Users SHALL authenticate with email and password to access the system.
 **VIOLATION:** This does NOT follow security best practices.
 
 ### Requirement: Session Persistence
-Users SHALL maintain their session for 15 minutes after login.
+Users SHALL maintain their session for the configured JWT expiration duration.
 
 #### Scenario: Session timeout
-- **WHEN** 15 minutes pass without any request from an authenticated user
+- **WHEN** the JWT token expires
 - **THEN** the session expires
 - **AND** the user must log in again
 
-**KNOWN BUG:** Session expires after 15 minutes regardless of user activity.
-**KNOWN BUG:** Refresh token never renews automatically.
+### Requirement: Token Expiry Validation
+The system SHALL validate JWT token expiry on every authenticated request.
+
+#### Scenario: Expired token on protected route
+- **WHEN** an authenticated request includes an expired JWT token
+- **THEN** the system SHALL return a 401 Unauthorized response
+- **AND** the user SHALL be redirected to login
 
 ### Requirement: Password Storage
 Users SHALL have their passwords stored securely.

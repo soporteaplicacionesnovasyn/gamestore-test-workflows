@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { Navbar } from './components/Navbar';
 import { SessionExpiredNotification } from './components/SessionExpiredNotification';
+import { SessionCountdown } from './components/SessionCountdown';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Products } from './pages/Products';
@@ -30,6 +31,7 @@ const AppRoutes = () => {
       <AuthProvider>
         <CartProvider>
           <SessionExpiredNotification />
+          <SessionCountdown />
           <Navbar />
           <Routes>
             <Route path="/" element={<Navigate to="/products" />} />

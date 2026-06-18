@@ -1,0 +1,2744 @@
+{
+  "nodes": [
+    {
+      "id": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "label": "migration.sql",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L1"
+    },
+    {
+      "id": "20260428005409_gamestore_migration_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L2"
+    },
+    {
+      "id": "20260428005409_gamestore_migration_product",
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L13"
+    },
+    {
+      "id": "20260428005409_gamestore_migration_cart",
+      "label": "Cart",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L25"
+    },
+    {
+      "id": "20260428005409_gamestore_migration_cartitem",
+      "label": "CartItem",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L34"
+    },
+    {
+      "id": "20260428005409_gamestore_migration_order",
+      "label": "Order",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L44"
+    },
+    {
+      "id": "20260428005409_gamestore_migration_orderitem",
+      "label": "OrderItem",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L54"
+    },
+    {
+      "id": "backend_prisma_seed_ts",
+      "label": "seed.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "prisma_seed_prisma",
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "prisma_seed_products",
+      "label": "products",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "prisma_seed_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L60"
+    },
+    {
+      "id": "backend_src_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_index_app",
+      "label": "app",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "backend_src_middleware_auth_ts",
+      "label": "auth.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "middleware_auth_authrequest",
+      "label": "AuthRequest",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "middleware_auth_authenticate",
+      "label": "authenticate()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "middleware_auth_generatetoken",
+      "label": "generateToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "middleware_auth_generaterefreshtoken",
+      "label": "generateRefreshToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "middleware_auth_verifyrefreshtoken",
+      "label": "verifyRefreshToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "backend_src_routes_admin_ts",
+      "label": "admin.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_admin_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "routes_admin_prisma",
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "backend_src_routes_auth_ts",
+      "label": "auth.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_auth_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "routes_auth_prisma",
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "routes_auth_token",
+      "label": "token",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "routes_auth_refreshtoken",
+      "label": "refreshToken",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "routes_auth_decoded",
+      "label": "decoded",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L76"
+    },
+    {
+      "id": "backend_src_routes_cart_ts",
+      "label": "cart.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_cart_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "routes_cart_prisma",
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "backend_src_routes_orders_ts",
+      "label": "orders.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_orders_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "routes_orders_prisma",
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "routes_orders_orderitems",
+      "label": "orderItems",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "routes_orders_price",
+      "label": "price",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "backend_src_routes_products_ts",
+      "label": "products.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_products_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "routes_products_prisma",
+      "label": "prisma",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "routes_products_pagenum",
+      "label": "pageNum",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "routes_products_limitnum",
+      "label": "limitNum",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "routes_products_where",
+      "label": "where",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "routes_products_orderby",
+      "label": "orderBy",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "frontend_postcss_config_js",
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\postcss.config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_app_tsx",
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_protectedroute",
+      "label": "ProtectedRoute()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_app_approutes",
+      "label": "AppRoutes()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L51"
+    },
+    {
+      "id": "frontend_src_components_navbar_tsx",
+      "label": "Navbar.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_navbar_navbar",
+      "label": "Navbar()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "frontend_src_components_sessioncountdown_tsx",
+      "label": "SessionCountdown.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_sessioncountdown_decodetoken",
+      "label": "decodeToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "components_sessioncountdown_sessioncountdown",
+      "label": "SessionCountdown()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "frontend_src_components_sessionexpirednotification_tsx",
+      "label": "SessionExpiredNotification.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionExpiredNotification.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_sessionexpirednotification_sessionexpirednotification",
+      "label": "SessionExpiredNotification()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionExpiredNotification.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "frontend_src_context_authcontext_tsx",
+      "label": "AuthContext.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "context_authcontext_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "context_authcontext_authcontexttype",
+      "label": "AuthContextType",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "context_authcontext_authcontext",
+      "label": "AuthContext",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "context_authcontext_authprovider",
+      "label": "AuthProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "context_authcontext_useauth",
+      "label": "useAuth()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L70"
+    },
+    {
+      "id": "frontend_src_context_cartcontext_tsx",
+      "label": "CartContext.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "context_cartcontext_cartitem",
+      "label": "CartItem",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "context_cartcontext_cart",
+      "label": "Cart",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "context_cartcontext_cartcontexttype",
+      "label": "CartContextType",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "context_cartcontext_cartcontext",
+      "label": "CartContext",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "context_cartcontext_cartprovider",
+      "label": "CartProvider()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "context_cartcontext_usecart",
+      "label": "useCart()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L92"
+    },
+    {
+      "id": "frontend_src_main_tsx",
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\main.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_pages_admin_tsx",
+      "label": "Admin.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_admin_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "pages_admin_order",
+      "label": "Order",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "pages_admin_stats",
+      "label": "Stats",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L23"
+    },
+    {
+      "id": "pages_admin_admin",
+      "label": "Admin()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "frontend_src_pages_cart_tsx",
+      "label": "Cart.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_cart_cart",
+      "label": "Cart()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_pages_checkout_tsx",
+      "label": "Checkout.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_checkout_checkout",
+      "label": "Checkout()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_pages_login_tsx",
+      "label": "Login.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_login_login",
+      "label": "Login()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "frontend_src_pages_products_tsx",
+      "label": "Products.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_products_product",
+      "label": "Product",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "pages_products_products",
+      "label": "Products()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_pages_register_tsx",
+      "label": "Register.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_register_register",
+      "label": "Register()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "frontend_src_services_api_ts",
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_api_authtoken",
+      "label": "authToken",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "services_api_refreshtoken",
+      "label": "refreshToken",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "services_api_settokens",
+      "label": "setTokens()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "services_api_cleartokens",
+      "label": "clearTokens()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "services_api_gettoken",
+      "label": "getToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "services_api_setsessionexpiredhandler",
+      "label": "setSessionExpiredHandler()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "services_api_handleunauthorized",
+      "label": "handleUnauthorized()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "services_api_fetchwithauth",
+      "label": "fetchWithAuth()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "services_api_api",
+      "label": "api",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L81"
+    },
+    {
+      "id": "frontend_tailwind_config_js",
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\tailwind.config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_vite_config_ts",
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\vite.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_index_html",
+      "label": "GameStore Frontend HTML Entrypoint",
+      "file_type": "code",
+      "source_file": "frontend/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "spec_template_md",
+      "label": "spec-template.md",
+      "file_type": "document",
+      "source_file": "openspec/templates/spec-template.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "readme_md",
+      "label": "GameStore README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "auth_spec",
+      "label": "Auth Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/auth/spec.md"
+    },
+    {
+      "id": "cart_spec",
+      "label": "Cart Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/cart/spec.md"
+    },
+    {
+      "id": "catalog_spec",
+      "label": "Catalog Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/catalog/spec.md"
+    },
+    {
+      "id": "orders_spec",
+      "label": "Orders Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/orders/spec.md"
+    },
+    {
+      "id": "session_timeout_spec",
+      "label": "Session Timeout Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/session-timeout/spec.md"
+    },
+    {
+      "id": "fix_catalog_pagination_20260612",
+      "label": "Fix Catalog Pagination (2026-06-12)",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md"
+    },
+    {
+      "id": "fix_session_timeout_20260612",
+      "label": "Fix Session Timeout (2026-06-12)",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md"
+    },
+    {
+      "id": "fix_pagination_20260615",
+      "label": "Fix Pagination (2026-06-15)",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-06-15-fix-pagination/proposal.md"
+    },
+    {
+      "id": "products_ts",
+      "label": "backend/src/routes/products.ts",
+      "file_type": "code",
+      "source_file": "backend/src/routes/products.ts"
+    },
+    {
+      "id": "auth_middleware_ts",
+      "label": "backend/src/middleware/auth.ts",
+      "file_type": "code",
+      "source_file": "backend/src/middleware/auth.ts"
+    },
+    {
+      "id": "auth_routes_ts",
+      "label": "backend/src/routes/auth.ts",
+      "file_type": "code",
+      "source_file": "backend/src/routes/auth.ts"
+    },
+    {
+      "id": "orders_ts",
+      "label": "backend/src/routes/orders.ts",
+      "file_type": "code",
+      "source_file": "backend/src/routes/orders.ts"
+    },
+    {
+      "id": "api_client_ts",
+      "label": "frontend/src/services/api.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/services/api.ts"
+    }
+  ],
+  "edges": [
+    {
+      "source": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "target": "20260428005409_gamestore_migration_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "target": "20260428005409_gamestore_migration_product",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "target": "20260428005409_gamestore_migration_cart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L25",
+      "weight": 1
+    },
+    {
+      "source": "20260428005409_gamestore_migration_cart",
+      "target": "20260428005409_gamestore_migration_user",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L30",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "target": "20260428005409_gamestore_migration_cartitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L34",
+      "weight": 1
+    },
+    {
+      "source": "20260428005409_gamestore_migration_cartitem",
+      "target": "20260428005409_gamestore_migration_cart",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L39",
+      "weight": 1
+    },
+    {
+      "source": "20260428005409_gamestore_migration_cartitem",
+      "target": "20260428005409_gamestore_migration_product",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L40",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "target": "20260428005409_gamestore_migration_order",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L44",
+      "weight": 1
+    },
+    {
+      "source": "20260428005409_gamestore_migration_order",
+      "target": "20260428005409_gamestore_migration_user",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L50",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_migrations_20260428005409_gamestore_migration_sql",
+      "target": "20260428005409_gamestore_migration_orderitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L54",
+      "weight": 1
+    },
+    {
+      "source": "20260428005409_gamestore_migration_orderitem",
+      "target": "20260428005409_gamestore_migration_order",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L60",
+      "weight": 1
+    },
+    {
+      "source": "20260428005409_gamestore_migration_orderitem",
+      "target": "20260428005409_gamestore_migration_product",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\migrations\\20260428005409_gamestore\\migration.sql",
+      "source_location": "L61",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_seed_ts",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_seed_ts",
+      "target": "prisma_seed_prisma",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_seed_ts",
+      "target": "prisma_seed_products",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_prisma_seed_ts",
+      "target": "prisma_seed_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\prisma\\seed.ts",
+      "source_location": "L60",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "dotenv",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "backend_src_routes_auth_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "backend_src_routes_products_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "backend_src_routes_cart_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "backend_src_routes_orders_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "backend_src_routes_admin_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_index_ts",
+      "target": "src_index_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\index.ts",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "jsonwebtoken",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "middleware_auth_authrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "middleware_auth_authenticate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "middleware_auth_generatetoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L31",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "middleware_auth_generaterefreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L36",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_middleware_auth_ts",
+      "target": "middleware_auth_verifyrefreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\middleware\\auth.ts",
+      "source_location": "L40",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "backend_src_middleware_auth_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "middleware_auth_authenticate",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "middleware_auth_authrequest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "routes_admin_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_admin_ts",
+      "target": "routes_admin_prisma",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\admin.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "backend_src_middleware_auth_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "middleware_auth_generatetoken",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "middleware_auth_generaterefreshtoken",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "middleware_auth_verifyrefreshtoken",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "middleware_auth_authrequest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "middleware_auth_authenticate",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_prisma",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_token",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L27",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_refreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_token",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L54",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_refreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L55",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_decoded",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L76",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_auth_ts",
+      "target": "routes_auth_token",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\auth.ts",
+      "source_location": "L87",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "backend_src_middleware_auth_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "middleware_auth_authenticate",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "middleware_auth_authrequest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "routes_cart_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_cart_ts",
+      "target": "routes_cart_prisma",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\cart.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "backend_src_middleware_auth_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "middleware_auth_authenticate",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "middleware_auth_authrequest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "routes_orders_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "routes_orders_prisma",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "routes_orders_orderitems",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L30",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_orders_ts",
+      "target": "routes_orders_price",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\orders.ts",
+      "source_location": "L33",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "backend_src_middleware_auth_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "middleware_auth_authenticate",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "middleware_auth_authrequest",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "routes_products_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "routes_products_prisma",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "routes_products_pagenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "routes_products_limitnum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "routes_products_where",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L19",
+      "weight": 1
+    },
+    {
+      "source": "backend_src_routes_products_ts",
+      "target": "routes_products_orderby",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\backend\\src\\routes\\products.ts",
+      "source_location": "L35",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_context_authcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "context_authcontext_authprovider",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_context_cartcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "context_cartcontext_cartprovider",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_components_navbar_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "components_navbar_navbar",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_components_sessionexpirednotification_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "components_sessionexpirednotification_sessionexpirednotification",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_components_sessioncountdown_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "components_sessioncountdown_sessioncountdown",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_pages_login_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "pages_login_login",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_pages_register_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "pages_register_register",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L8",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_pages_products_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "pages_products_products",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_pages_cart_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "pages_cart_cart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L10",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_pages_checkout_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "pages_checkout_checkout",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "frontend_src_pages_admin_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "pages_admin_admin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L12",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_protectedroute",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L14",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_approutes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\App.tsx",
+      "source_location": "L51",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_navbar_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_navbar_tsx",
+      "target": "frontend_src_context_authcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_navbar_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_navbar_tsx",
+      "target": "frontend_src_context_cartcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_navbar_tsx",
+      "target": "context_cartcontext_usecart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_navbar_tsx",
+      "target": "components_navbar_navbar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\Navbar.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessioncountdown_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessioncountdown_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessioncountdown_tsx",
+      "target": "services_api_gettoken",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessioncountdown_tsx",
+      "target": "components_sessioncountdown_decodetoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessioncountdown_tsx",
+      "target": "components_sessioncountdown_sessioncountdown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionCountdown.tsx",
+      "source_location": "L15",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessionexpirednotification_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionExpiredNotification.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessionexpirednotification_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionExpiredNotification.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessionexpirednotification_tsx",
+      "target": "services_api_setsessionexpiredhandler",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionExpiredNotification.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_components_sessionexpirednotification_tsx",
+      "target": "components_sessionexpirednotification_sessionexpirednotification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\components\\SessionExpiredNotification.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "services_api_api",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "services_api_settokens",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "services_api_cleartokens",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "services_api_gettoken",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "context_authcontext_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "context_authcontext_authcontexttype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "context_authcontext_authcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L19",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "context_authcontext_authprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L21",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L70",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "services_api_api",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "context_cartcontext_cartitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "context_cartcontext_cart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L11",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "context_cartcontext_cartcontexttype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L16",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "context_cartcontext_cartcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L26",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "context_cartcontext_cartprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_context_cartcontext_tsx",
+      "target": "context_cartcontext_usecart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\context\\CartContext.tsx",
+      "source_location": "L92",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_main_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\main.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_main_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\main.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_main_tsx",
+      "target": "frontend_src_app_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\main.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_main_tsx",
+      "target": "c_users_user_gamestore_workshop_frontend_src_index_css",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\main.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "services_api_api",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "pages_admin_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "pages_admin_order",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "pages_admin_stats",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L23",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_admin_tsx",
+      "target": "pages_admin_admin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Admin.tsx",
+      "source_location": "L30",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "frontend_src_context_cartcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "context_cartcontext_usecart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "frontend_src_context_authcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_cart_tsx",
+      "target": "pages_cart_cart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Cart.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "frontend_src_context_cartcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "context_cartcontext_usecart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "services_api_api",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_checkout_tsx",
+      "target": "pages_checkout_checkout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Checkout.tsx",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_login_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_login_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_login_tsx",
+      "target": "frontend_src_context_authcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_login_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_login_tsx",
+      "target": "pages_login_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Login.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "frontend_src_services_api_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "services_api_api",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "frontend_src_context_cartcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "context_cartcontext_usecart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "frontend_src_context_authcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "pages_products_product",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_products_tsx",
+      "target": "pages_products_products",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Products.tsx",
+      "source_location": "L17",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_register_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_register_tsx",
+      "target": "react_router_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_register_tsx",
+      "target": "frontend_src_context_authcontext_tsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_register_tsx",
+      "target": "context_authcontext_useauth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_pages_register_tsx",
+      "target": "pages_register_register",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\pages\\Register.tsx",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_authtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_refreshtoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_settokens",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L6",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_cleartokens",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_gettoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L20",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_setsessionexpiredhandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L24",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_handleunauthorized",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L28",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_fetchwithauth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L37",
+      "weight": 1
+    },
+    {
+      "source": "frontend_src_services_api_ts",
+      "target": "services_api_api",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L81",
+      "weight": 1
+    },
+    {
+      "source": "services_api_handleunauthorized",
+      "target": "services_api_cleartokens",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L29",
+      "weight": 1
+    },
+    {
+      "source": "services_api_fetchwithauth",
+      "target": "services_api_handleunauthorized",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L52",
+      "weight": 1
+    },
+    {
+      "source": "services_api_fetchwithauth",
+      "target": "services_api_settokens",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\src\\services\\api.ts",
+      "source_location": "L66",
+      "weight": 1
+    },
+    {
+      "source": "frontend_vite_config_ts",
+      "target": "vite",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\vite.config.ts",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "frontend_vite_config_ts",
+      "target": "plugin_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\User\\gamestore-workshop\\frontend\\vite.config.ts",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "fix_catalog_pagination_20260612",
+      "target": "catalog_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md"
+    },
+    {
+      "source": "fix_catalog_pagination_20260612",
+      "target": "products_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "auth_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/specs/auth/spec.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "session_timeout_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/specs/session-timeout/spec.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "auth_middleware_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "auth_routes_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "api_client_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/tasks.md"
+    },
+    {
+      "source": "fix_pagination_20260615",
+      "target": "catalog_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-15-fix-pagination/specs/catalog/spec.md"
+    },
+    {
+      "source": "fix_pagination_20260615",
+      "target": "products_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-15-fix-pagination/proposal.md"
+    },
+    {
+      "source": "fix_catalog_pagination_20260612",
+      "target": "fix_pagination_20260615",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "gamestore_specifications",
+      "label": "GameStore Specifications",
+      "nodes": [
+        "auth_spec",
+        "cart_spec",
+        "catalog_spec",
+        "orders_spec",
+        "session_timeout_spec"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1
+    },
+    {
+      "id": "pagination_fix_changes",
+      "label": "Pagination Fix Changes",
+      "nodes": [
+        "fix_catalog_pagination_20260612",
+        "fix_pagination_20260615",
+        "products_ts"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

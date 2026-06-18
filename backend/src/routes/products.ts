@@ -9,8 +9,6 @@ router.get('/', async (req, res) => {
   try {
     const { page = '1', limit = '10', category, minPrice, maxPrice, sort } = req.query;
 
-    // BUG: Pagination is broken - page 2 shows same products
-    // FIXME: Offset calculation is wrong
     const pageNum = parseInt(page as string);
     const limitNum = parseInt(limit as string);
     const skip = (pageNum - 1) * limitNum;
@@ -24,19 +22,16 @@ router.get('/', async (req, res) => {
       where.category = category as string;
     }
 
-    // BUG: Price filter sorts alphabetically ("10" < "2")
-    // FIXME: Price should be numeric, not string comparison
     if (minPrice) {
-      where.price = { ...where.price, gte: minPrice as string };
+      where.price = { ...where.price, gte: parseFloat(minPrice as string) };
     }
     if (maxPrice) {
-      where.price = { ...where.price, lte: maxPrice as string };
+      where.price = { ...where.price, lte: parseFloat(maxPrice as string) };
     }
 
-    // BUG: Sort doesn't work properly for price
     let orderBy: any = { createdAt: 'desc' };
     if (sort === 'price_asc') {
-      orderBy = { price: 'asc' }; // FIXME: Sorts alphabetically
+      orderBy = { price: 'asc' };
     } else if (sort === 'price_desc') {
       orderBy = { price: 'desc' };
     }
@@ -44,7 +39,7 @@ router.get('/', async (req, res) => {
     // BUG: N+1 query problem - fetches each product separately
      const products = await prisma.product.findMany({
        where,
-       skip: 0, // BUG: Always returns page 1 results
+       skip,
        take: limitNum,
        orderBy
      });
@@ -87,7 +82,7 @@ router.post('/', authenticate, async (req: AuthRequest, res: Response) => {
       data: {
         name,
         description,
-        price: String(price), // BUG: Price stored as string
+        price: parseFloat(price),
         image, // BUG: Absolute path pointing to localhost
         stock,
         category
@@ -110,7 +105,7 @@ router.put('/:id', authenticate, async (req: AuthRequest, res: Response) => {
       data: {
         name,
         description,
-        price: String(price),
+        price: parseFloat(price),
         image,
         stock,
         category

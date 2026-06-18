@@ -1,0 +1,335 @@
+{
+  "communities": {
+    "0": [
+      "components_sessioncountdown_decodetoken",
+      "components_sessioncountdown_sessioncountdown",
+      "components_sessionexpirednotification_sessionexpirednotification",
+      "frontend_src_components_sessioncountdown_tsx",
+      "frontend_src_components_sessionexpirednotification_tsx",
+      "frontend_src_services_api_ts",
+      "services_api_authtoken",
+      "services_api_cleartokens",
+      "services_api_fetchwithauth",
+      "services_api_gettoken",
+      "services_api_handleunauthorized",
+      "services_api_refreshtoken",
+      "services_api_setsessionexpiredhandler",
+      "services_api_settokens"
+    ],
+    "1": [
+      "backend_src_middleware_auth_ts",
+      "backend_src_routes_auth_ts",
+      "middleware_auth_generaterefreshtoken",
+      "middleware_auth_generatetoken",
+      "middleware_auth_verifyrefreshtoken",
+      "routes_auth_decoded",
+      "routes_auth_prisma",
+      "routes_auth_refreshtoken",
+      "routes_auth_router",
+      "routes_auth_token"
+    ],
+    "2": [
+      "context_authcontext_useauth",
+      "frontend_src_app_tsx",
+      "frontend_src_main_tsx",
+      "frontend_src_pages_login_tsx",
+      "frontend_src_pages_register_tsx",
+      "pages_login_login",
+      "pages_register_register",
+      "src_app_app",
+      "src_app_approutes",
+      "src_app_protectedroute"
+    ],
+    "3": [
+      "context_cartcontext_cart",
+      "context_cartcontext_cartcontext",
+      "context_cartcontext_cartcontexttype",
+      "context_cartcontext_cartitem",
+      "context_cartcontext_cartprovider",
+      "frontend_src_context_cartcontext_tsx",
+      "frontend_src_pages_checkout_tsx",
+      "pages_checkout_checkout",
+      "services_api_api"
+    ],
+    "4": [
+      "20260428005409_gamestore_migration_cart",
+      "20260428005409_gamestore_migration_cartitem",
+      "20260428005409_gamestore_migration_order",
+      "20260428005409_gamestore_migration_orderitem",
+      "20260428005409_gamestore_migration_product",
+      "20260428005409_gamestore_migration_user",
+      "backend_prisma_migrations_20260428005409_gamestore_migration_sql"
+    ],
+    "5": [
+      "backend_src_index_ts",
+      "backend_src_routes_orders_ts",
+      "routes_orders_orderitems",
+      "routes_orders_price",
+      "routes_orders_prisma",
+      "routes_orders_router",
+      "src_index_app"
+    ],
+    "6": [
+      "backend_src_routes_products_ts",
+      "routes_products_limitnum",
+      "routes_products_orderby",
+      "routes_products_pagenum",
+      "routes_products_prisma",
+      "routes_products_router",
+      "routes_products_where"
+    ],
+    "7": [
+      "api_client_ts",
+      "auth_middleware_ts",
+      "auth_routes_ts",
+      "auth_spec",
+      "fix_session_timeout_20260612",
+      "session_timeout_spec"
+    ],
+    "8": [
+      "components_navbar_navbar",
+      "context_cartcontext_usecart",
+      "frontend_src_components_navbar_tsx",
+      "frontend_src_pages_cart_tsx",
+      "pages_cart_cart"
+    ],
+    "9": [
+      "context_authcontext_authcontext",
+      "context_authcontext_authcontexttype",
+      "context_authcontext_authprovider",
+      "context_authcontext_user",
+      "frontend_src_context_authcontext_tsx"
+    ],
+    "10": [
+      "frontend_src_pages_admin_tsx",
+      "pages_admin_admin",
+      "pages_admin_order",
+      "pages_admin_stats",
+      "pages_admin_user"
+    ],
+    "11": [
+      "backend_prisma_seed_ts",
+      "prisma_seed_main",
+      "prisma_seed_prisma",
+      "prisma_seed_products"
+    ],
+    "12": [
+      "backend_src_routes_admin_ts",
+      "middleware_auth_authrequest",
+      "routes_admin_prisma",
+      "routes_admin_router"
+    ],
+    "13": [
+      "backend_src_routes_cart_ts",
+      "middleware_auth_authenticate",
+      "routes_cart_prisma",
+      "routes_cart_router"
+    ],
+    "14": [
+      "catalog_spec",
+      "fix_catalog_pagination_20260612",
+      "fix_pagination_20260615",
+      "products_ts"
+    ],
+    "15": [
+      "frontend_src_pages_products_tsx",
+      "pages_products_product",
+      "pages_products_products"
+    ],
+    "16": [
+      "cart_spec"
+    ],
+    "17": [
+      "frontend_index_html"
+    ],
+    "18": [
+      "frontend_postcss_config_js"
+    ],
+    "19": [
+      "frontend_tailwind_config_js"
+    ],
+    "20": [
+      "frontend_vite_config_ts"
+    ],
+    "21": [
+      "orders_spec"
+    ],
+    "22": [
+      "orders_ts"
+    ],
+    "23": [
+      "readme_md"
+    ],
+    "24": [
+      "spec_template_md"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1978021978021978,
+    "1": 0.26666666666666666,
+    "2": 0.28888888888888886,
+    "3": 0.25,
+    "4": 0.5714285714285714,
+    "5": 0.2857142857142857,
+    "6": 0.2857142857142857,
+    "7": 0.3333333333333333,
+    "8": 0.4,
+    "9": 0.4,
+    "10": 0.4,
+    "11": 0.5,
+    "12": 0.5,
+    "13": 0.5,
+    "14": 0.8333333333333334,
+    "15": 0.6666666666666666,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1
+  },
+  "gods": [
+    {
+      "id": "context_authcontext_useauth",
+      "label": "useAuth()",
+      "edges": 7,
+      "degree": 7
+    },
+    {
+      "id": "middleware_auth_authrequest",
+      "label": "AuthRequest",
+      "edges": 6,
+      "degree": 6
+    },
+    {
+      "id": "middleware_auth_authenticate",
+      "label": "authenticate()",
+      "edges": 6,
+      "degree": 6
+    },
+    {
+      "id": "services_api_api",
+      "label": "api",
+      "edges": 6,
+      "degree": 6
+    },
+    {
+      "id": "context_cartcontext_usecart",
+      "label": "useCart()",
+      "edges": 5,
+      "degree": 5
+    },
+    {
+      "id": "fix_session_timeout_20260612",
+      "label": "Fix Session Timeout (2026-06-12)",
+      "edges": 5,
+      "degree": 5
+    },
+    {
+      "id": "20260428005409_gamestore_migration_user",
+      "label": "User",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "20260428005409_gamestore_migration_product",
+      "label": "Product",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "20260428005409_gamestore_migration_cart",
+      "label": "Cart",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "20260428005409_gamestore_migration_cartitem",
+      "label": "CartItem",
+      "edges": 3,
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Fix Session Timeout (2026-06-12)",
+      "target": "backend/src/middleware/auth.ts",
+      "source_files": [
+        "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md",
+        "backend/src/middleware/auth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ code); connects across different repos/directories; peripheral node `backend/src/middleware/auth.ts` unexpectedly reaches hub `Fix Session Timeout (2026-06-12)`"
+    },
+    {
+      "source": "Fix Session Timeout (2026-06-12)",
+      "target": "backend/src/routes/auth.ts",
+      "source_files": [
+        "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md",
+        "backend/src/routes/auth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ code); connects across different repos/directories; peripheral node `backend/src/routes/auth.ts` unexpectedly reaches hub `Fix Session Timeout (2026-06-12)`"
+    },
+    {
+      "source": "Fix Session Timeout (2026-06-12)",
+      "target": "frontend/src/services/api.ts",
+      "source_files": [
+        "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md",
+        "frontend/src/services/api.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ code); connects across different repos/directories; peripheral node `frontend/src/services/api.ts` unexpectedly reaches hub `Fix Session Timeout (2026-06-12)`"
+    },
+    {
+      "source": "Fix Catalog Pagination (2026-06-12)",
+      "target": "backend/src/routes/products.ts",
+      "source_files": [
+        "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md",
+        "backend/src/routes/products.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "Fix Pagination (2026-06-15)",
+      "target": "backend/src/routes/products.ts",
+      "source_files": [
+        "openspec/changes/archive/2026-06-15-fix-pagination/proposal.md",
+        "backend/src/routes/products.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ code); connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `AuthRequest` connect `Community 12` to `Community 1`, `Community 13`, `Community 5`, `Community 6`?",
+      "why": "High betweenness centrality (0.009) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `authenticate()` connect `Community 13` to `Community 1`, `Community 12`, `Community 5`, `Community 6`?",
+      "why": "High betweenness centrality (0.009) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `api` connect `Community 3` to `Community 9`, `Community 10`, `Community 15`, `Community 0`?",
+      "why": "High betweenness centrality (0.004) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `prisma`, `products`, `app` to the rest of the system?",
+      "why": "45 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

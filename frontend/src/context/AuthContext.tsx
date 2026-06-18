@@ -13,7 +13,7 @@ interface AuthContextType {
   loading: boolean;
   login: (email: string, password: string) => Promise<void>;
   register: (email: string, password: string, name: string) => Promise<void>;
-  logout: () => void;
+  logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -54,8 +54,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setUser(data.user);
   };
 
-  const logout = () => {
-    api.auth.logout();
+  const logout = async () => {
+    try {
+      await api.auth.logout();
+    } catch {
+      // Log API failure, but still clear local state
+    }
     clearTokens();
     setUser(null);
   };

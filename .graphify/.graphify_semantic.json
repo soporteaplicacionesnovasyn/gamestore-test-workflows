@@ -1,0 +1,229 @@
+{
+  "nodes": [
+    {
+      "id": "frontend_index_html",
+      "label": "GameStore Frontend HTML Entrypoint",
+      "file_type": "code",
+      "source_file": "frontend/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "spec_template_md",
+      "label": "spec-template.md",
+      "file_type": "document",
+      "source_file": "openspec/templates/spec-template.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "readme_md",
+      "label": "GameStore README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null
+    },
+    {
+      "id": "auth_spec",
+      "label": "Auth Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/auth/spec.md"
+    },
+    {
+      "id": "cart_spec",
+      "label": "Cart Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/cart/spec.md"
+    },
+    {
+      "id": "catalog_spec",
+      "label": "Catalog Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/catalog/spec.md"
+    },
+    {
+      "id": "orders_spec",
+      "label": "Orders Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/orders/spec.md"
+    },
+    {
+      "id": "session_timeout_spec",
+      "label": "Session Timeout Specification",
+      "file_type": "document",
+      "source_file": "openspec/specs/session-timeout/spec.md"
+    },
+    {
+      "id": "fix_catalog_pagination_20260612",
+      "label": "Fix Catalog Pagination (2026-06-12)",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md"
+    },
+    {
+      "id": "fix_session_timeout_20260612",
+      "label": "Fix Session Timeout (2026-06-12)",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md"
+    },
+    {
+      "id": "fix_pagination_20260615",
+      "label": "Fix Pagination (2026-06-15)",
+      "file_type": "document",
+      "source_file": "openspec/changes/archive/2026-06-15-fix-pagination/proposal.md"
+    },
+    {
+      "id": "products_ts",
+      "label": "backend/src/routes/products.ts",
+      "file_type": "code",
+      "source_file": "backend/src/routes/products.ts"
+    },
+    {
+      "id": "auth_middleware_ts",
+      "label": "backend/src/middleware/auth.ts",
+      "file_type": "code",
+      "source_file": "backend/src/middleware/auth.ts"
+    },
+    {
+      "id": "auth_routes_ts",
+      "label": "backend/src/routes/auth.ts",
+      "file_type": "code",
+      "source_file": "backend/src/routes/auth.ts"
+    },
+    {
+      "id": "orders_ts",
+      "label": "backend/src/routes/orders.ts",
+      "file_type": "code",
+      "source_file": "backend/src/routes/orders.ts"
+    },
+    {
+      "id": "api_client_ts",
+      "label": "frontend/src/services/api.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/services/api.ts"
+    }
+  ],
+  "edges": [
+    {
+      "source": "fix_catalog_pagination_20260612",
+      "target": "catalog_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md"
+    },
+    {
+      "source": "fix_catalog_pagination_20260612",
+      "target": "products_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-catalog-pagination/proposal.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "auth_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/specs/auth/spec.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "session_timeout_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/specs/session-timeout/spec.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "auth_middleware_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "auth_routes_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/proposal.md"
+    },
+    {
+      "source": "fix_session_timeout_20260612",
+      "target": "api_client_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-12-fix-session-timeout/tasks.md"
+    },
+    {
+      "source": "fix_pagination_20260615",
+      "target": "catalog_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-15-fix-pagination/specs/catalog/spec.md"
+    },
+    {
+      "source": "fix_pagination_20260615",
+      "target": "products_ts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "openspec/changes/archive/2026-06-15-fix-pagination/proposal.md"
+    },
+    {
+      "source": "fix_catalog_pagination_20260612",
+      "target": "fix_pagination_20260615",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "gamestore_specifications",
+      "label": "GameStore Specifications",
+      "nodes": [
+        "auth_spec",
+        "cart_spec",
+        "catalog_spec",
+        "orders_spec",
+        "session_timeout_spec"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1
+    },
+    {
+      "id": "pagination_fix_changes",
+      "label": "Pagination Fix Changes",
+      "nodes": [
+        "fix_catalog_pagination_20260612",
+        "fix_pagination_20260615",
+        "products_ts"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
