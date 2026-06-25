@@ -1,0 +1,7 @@
+﻿
+> gamestore-backend@1.0.0 dev
+> ts-node-dev --respawn --transpile-only src/index.ts
+
+[INFO] 15:30:01 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+Ôùç injected env (1) from .env // tip: Ôîü auth for agents [www.vestauth.com]
+Server running on http://localhost:3001

@@ -7,8 +7,15 @@ const prisma = new PrismaClient();
 
 router.use(authenticate);
 
-// BUG: No admin role check - any authenticated user can access
-// FIXME: Should check if user.role === 'admin'
+const requireAdmin = (req: AuthRequest, res: Response, next: any) => {
+  if (req.userRole !== 'admin') {
+    return res.status(403).json({ error: 'Admin access required' });
+  }
+  next();
+};
+
+router.use(requireAdmin);
+
 router.get('/users', async (req: AuthRequest, res: Response) => {
   try {
     const users = await prisma.user.findMany({
@@ -73,6 +80,63 @@ router.get('/stats', async (req: AuthRequest, res: Response) => {
     });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+router.get('/reviews', async (req: AuthRequest, res: Response) => {
+  try {
+    const status = req.query.status as string | undefined;
+    const where: any = {};
+    if (status) where.status = status;
+
+    const reviews = await prisma.review.findMany({
+      where,
+      include: {
+        user: { select: { id: true, name: true, email: true } },
+        product: { select: { id: true, name: true } },
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    res.json({ success: true, data: reviews });
+  } catch (error: any) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+router.put('/reviews/:id/status', async (req: AuthRequest, res: Response) => {
+  try {
+    const reviewId = parseInt(req.params.id);
+    const { status } = req.body;
+
+    if (!['pending', 'approved', 'rejected'].includes(status)) {
+      return res.status(400).json({ error: 'Invalid status. Must be pending, approved, or rejected' });
+    }
+
+    const review = await prisma.review.update({
+      where: { id: reviewId },
+      data: { status },
+      include: {
+        user: { select: { id: true, name: true } },
+        product: { select: { id: true, name: true } },
+      },
+    });
+
+    res.json({ success: true, data: review });
+  } catch (error: any) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+router.delete('/reviews/:id', async (req: AuthRequest, res: Response) => {
+  try {
+    const reviewId = parseInt(req.params.id);
+
+    await prisma.review.delete({ where: { id: reviewId } });
+
+    res.json({ success: true, message: 'Review deleted' });
+  } catch (error: any) {
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 

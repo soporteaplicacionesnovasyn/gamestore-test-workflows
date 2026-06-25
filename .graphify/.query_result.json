@@ -1,0 +1,16 @@
+{
+  "question": "No hay validacion de stock",
+  "answer": "See traversal above",
+  "sourceNodes": [
+    "CartItem",
+    "OrderItem",
+    "orderItems",
+    "Cart",
+    "Product",
+    "Order",
+    "orders.ts",
+    "products.ts",
+    "cart.ts",
+    "verifyRefreshToken()"
+  ]
+}

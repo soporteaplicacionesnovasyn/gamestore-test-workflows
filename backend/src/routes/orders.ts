@@ -23,44 +23,68 @@ router.post('/checkout', authenticate, async (req: AuthRequest, res: Response) =
       return res.status(400).json({ error: 'Cart is empty' });
     }
 
-    // BUG: No validation that stock is sufficient
-    // TODO: Validate stock before creating order
+    const insufficientStock = [];
+
+    for (const item of cart.items) {
+      if (item.quantity > item.product.stock) {
+        insufficientStock.push({
+          productId: item.productId,
+          name: item.product.name,
+          available: item.product.stock,
+          requested: item.quantity
+        });
+      }
+    }
+
+    if (insufficientStock.length > 0) {
+      return res.status(400).json({
+        error: 'Insufficient stock',
+        products: insufficientStock
+      });
+    }
 
     let total = 0;
-    const orderItems = [];
+    const orderItemsData = [];
 
     for (const item of cart.items) {
       const price = parseFloat(item.product.price);
       total += price * item.quantity;
       
-      orderItems.push({
+      orderItemsData.push({
         productId: item.productId,
         quantity: item.quantity,
         price
       });
     }
 
-    const order = await prisma.order.create({
-      data: {
-        userId,
-        total,
-        status: 'pending',
-        items: {
-          create: orderItems
-        }
-      },
-      include: {
-        items: {
-          include: { product: true }
-        }
+    const order = await prisma.$transaction(async (tx) => {
+      for (const item of cart.items) {
+        await tx.product.update({
+          where: { id: item.productId },
+          data: { stock: { decrement: item.quantity } }
+        });
       }
+
+      await tx.cartItem.deleteMany({
+        where: { cartId: cart.id }
+      });
+
+      return tx.order.create({
+        data: {
+          userId,
+          total,
+          status: 'pending',
+          items: {
+            create: orderItemsData
+          }
+        },
+        include: {
+          items: {
+            include: { product: true }
+          }
+        }
+      });
     });
-
-    // BUG: Cart not cleared after checkout
-    // TODO: Clear cart after successful order
-
-    // BUG: No confirmation step - order created immediately
-    // TODO: Add confirmation step
 
     res.status(201).json(order);
   } catch (error: any) {

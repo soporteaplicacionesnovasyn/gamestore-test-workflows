@@ -61,6 +61,8 @@ async function main() {
   console.log('Starting seed...');
 
   await prisma.$transaction([
+    prisma.review.deleteMany(),
+    prisma.rating.deleteMany(),
     prisma.cartItem.deleteMany(),
     prisma.orderItem.deleteMany(),
     prisma.cart.deleteMany(),
@@ -80,6 +82,61 @@ async function main() {
   });
 
   await prisma.product.createMany({ data: products });
+
+  const users = await prisma.user.findMany({ where: { role: 'user' } });
+  const allProducts = await prisma.product.findMany();
+
+  for (const product of allProducts.slice(0, 20)) {
+    const numRatings = Math.floor(Math.random() * 4) + 1;
+    const usedUsers = new Set<number>();
+    for (let i = 0; i < numRatings; i++) {
+      const user = users[Math.floor(Math.random() * users.length)];
+      if (usedUsers.has(user.id)) continue;
+      usedUsers.add(user.id);
+      const score = Math.floor(Math.random() * 5) + 1;
+      await prisma.rating.upsert({
+        where: { userId_productId: { userId: user.id, productId: product.id } },
+        update: {},
+        create: { userId: user.id, productId: product.id, score },
+      });
+    }
+  }
+
+  const reviewTitles = ['Great game!', 'Could be better', 'Amazing experience', 'Not my favorite', 'Worth every penny', 'Decent but overrated', 'Incredible', 'Fun gameplay', 'Too short', 'Masterpiece'];
+  const reviewBodies = [
+    'Really enjoyed playing this game. The graphics and gameplay are top notch.',
+    'Had some fun but there are definitely better games in this genre.',
+    'This game exceeded all my expectations. Highly recommended!',
+    'Not really my cup of tea, but I can see why others would enjoy it.',
+    'Great value for the price. Spent many hours playing.',
+    'Decent game but the hype was too much. It is good but not amazing.',
+    'One of the best games I have ever played. A true masterpiece.',
+    'Fun mechanics and engaging story. Could use some polish though.',
+    'Wish it was longer. The content here is great but leaves you wanting more.',
+    'A perfect blend of storytelling and gameplay. Must play.',
+  ];
+
+  for (const product of allProducts.slice(0, 15)) {
+    const numReviews = Math.floor(Math.random() * 3) + 1;
+    const usedUsers = new Set<number>();
+    for (let i = 0; i < numReviews; i++) {
+      const user = users[Math.floor(Math.random() * users.length)];
+      if (usedUsers.has(user.id)) continue;
+      usedUsers.add(user.id);
+      const idx = Math.floor(Math.random() * reviewTitles.length);
+      const score = Math.floor(Math.random() * 5) + 1;
+      await prisma.review.create({
+        data: {
+          userId: user.id,
+          productId: product.id,
+          title: reviewTitles[idx],
+          body: reviewBodies[idx],
+          score,
+          status: Math.random() > 0.2 ? 'approved' : 'pending',
+        },
+      });
+    }
+  }
 
   console.log('Seed completed!');
 }

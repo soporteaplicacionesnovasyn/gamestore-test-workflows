@@ -43,14 +43,32 @@ router.post('/add', authenticate, async (req: AuthRequest, res: Response) => {
       });
     }
 
+    const product = await prisma.product.findUnique({
+      where: { id: productId }
+    });
+
+    if (!product) {
+      return res.status(400).json({ error: 'Product not found' });
+    }
+
     const existingItem = await prisma.cartItem.findFirst({
       where: { cartId: cart.id, productId }
     });
 
+    const totalQty = existingItem ? existingItem.quantity + quantity : quantity;
+
+    if (totalQty > product.stock) {
+      return res.status(400).json({
+        error: 'Insufficient stock',
+        productId,
+        available: product.stock
+      });
+    }
+
     if (existingItem) {
       await prisma.cartItem.update({
         where: { id: existingItem.id },
-        data: { quantity: existingItem.quantity + quantity }
+        data: { quantity: totalQty }
       });
     } else {
       await prisma.cartItem.create({
@@ -61,9 +79,6 @@ router.post('/add', authenticate, async (req: AuthRequest, res: Response) => {
         }
       });
     }
-
-    // BUG: No stock validation before adding to cart
-    // TODO: Validate stock before adding
 
     const updatedCart = await prisma.cart.findUnique({
       where: { id: cart.id },

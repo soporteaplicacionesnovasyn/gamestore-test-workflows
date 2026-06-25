@@ -107,10 +107,18 @@ export const api = {
       const query = new URLSearchParams(params as any).toString();
       return fetchWithAuth(`/products?${query}`).then(r => r.json());
     },
+    getCategories: async () => fetchWithAuth('/products/categories').then(r => r.json()),
     getById: async (id: number) => fetchWithAuth(`/products/${id}`).then(r => r.json()),
     create: async (data: any) => fetchWithAuth('/products', { method: 'POST', body: JSON.stringify(data) }).then(r => r.json()),
     update: async (id: number, data: any) => fetchWithAuth(`/products/${id}`, { method: 'PUT', body: JSON.stringify(data) }).then(r => r.json()),
-    delete: async (id: number) => fetchWithAuth(`/products/${id}`, { method: 'DELETE' }).then(r => r.json())
+    delete: async (id: number) => fetchWithAuth(`/products/${id}`, { method: 'DELETE' }).then(r => r.json()),
+    rate: async (productId: number, score: number) =>
+      fetchWithAuth(`/products/${productId}/rate`, {
+        method: 'POST',
+        body: JSON.stringify({ score }),
+      }).then(r => r.json()),
+    getRatings: async (productId: number) =>
+      fetchWithAuth(`/products/${productId}/ratings`).then(r => r.json()),
   },
   cart: {
     get: async () => fetchWithAuth('/cart').then(r => r.json()),
@@ -124,10 +132,34 @@ export const api = {
     getAll: async () => fetchWithAuth('/orders').then(r => r.json()),
     getById: async (id: number) => fetchWithAuth(`/orders/${id}`).then(r => r.json())
   },
+  reviews: {
+    getProductReviews: async (productId: number, page = 1, limit = 10) =>
+      fetchWithAuth(`/products/${productId}/reviews?page=${page}&limit=${limit}`).then(r => r.json()),
+    create: async (productId: number, data: { title: string; body: string; score: number }) =>
+      fetchWithAuth(`/products/${productId}/reviews`, {
+        method: 'POST',
+        body: JSON.stringify(data),
+      }).then(r => r.json()),
+    update: async (productId: number, reviewId: number, data: { title?: string; body?: string; score?: number }) =>
+      fetchWithAuth(`/products/${productId}/reviews/${reviewId}`, {
+        method: 'PUT',
+        body: JSON.stringify(data),
+      }).then(r => r.json()),
+    delete: async (productId: number, reviewId: number) =>
+      fetchWithAuth(`/products/${productId}/reviews/${reviewId}`, {
+        method: 'DELETE',
+      }).then(r => r.json()),
+  },
   admin: {
     getUsers: async () => fetchWithAuth('/admin/users').then(r => r.json()),
     getOrders: async () => fetchWithAuth('/admin/orders').then(r => r.json()),
     updateOrderStatus: async (id: number, status: string) => fetchWithAuth(`/admin/orders/${id}/status`, { method: 'PUT', body: JSON.stringify({ status }) }).then(r => r.json()),
-    getStats: async () => fetchWithAuth('/admin/stats').then(r => r.json())
+    getStats: async () => fetchWithAuth('/admin/stats').then(r => r.json()),
+    getReviews: async (status?: string) =>
+      fetchWithAuth(`/admin/reviews${status ? `?status=${status}` : ''}`).then(r => r.json()),
+    updateReviewStatus: async (id: number, status: string) =>
+      fetchWithAuth(`/admin/reviews/${id}/status`, { method: 'PUT', body: JSON.stringify({ status }) }).then(r => r.json()),
+    deleteReview: async (id: number) =>
+      fetchWithAuth(`/admin/reviews/${id}`, { method: 'DELETE' }).then(r => r.json()),
   }
 };

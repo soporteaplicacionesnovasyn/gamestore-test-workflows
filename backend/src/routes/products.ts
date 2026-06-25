@@ -5,9 +5,31 @@ import { authenticate, AuthRequest } from '../middleware/auth';
 const router = Router();
 const prisma = new PrismaClient();
 
+router.get('/categories', async (req, res) => {
+  try {
+    const categories = await prisma.product.findMany({
+      select: { category: true },
+      distinct: ['category']
+    });
+
+    // Extract distinct categories and sort alphabetically
+    const categoryList = categories
+      .map(item => item.category)
+      .filter(Boolean)
+      .sort((a, b) => a.localeCompare(b));
+
+    res.json({
+      success: true,
+      data: categoryList
+    });
+  } catch (error: any) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 router.get('/', async (req, res) => {
   try {
-    const { page = '1', limit = '10', category, minPrice, maxPrice, sort } = req.query;
+    const { page = '1', limit = '10', category, minPrice, maxPrice, sort, search } = req.query;
 
     const pageNum = parseInt(page as string);
     const limitNum = parseInt(limit as string);
@@ -23,10 +45,20 @@ router.get('/', async (req, res) => {
     }
 
     if (minPrice) {
-      where.price = { ...where.price, gte: parseFloat(minPrice as string) };
+      const minPriceNum = parseFloat(minPrice as string);
+      if (!isNaN(minPriceNum)) {
+        where.price = { ...where.price, gte: minPriceNum };
+      }
     }
     if (maxPrice) {
-      where.price = { ...where.price, lte: parseFloat(maxPrice as string) };
+      const maxPriceNum = parseFloat(maxPrice as string);
+      if (!isNaN(maxPriceNum)) {
+        where.price = { ...where.price, lte: maxPriceNum };
+      }
+    }
+
+    if (search) {
+      where.name = { contains: (search as string).trim() };
     }
 
     let orderBy: any = { createdAt: 'desc' };
@@ -46,14 +78,36 @@ router.get('/', async (req, res) => {
 
     const total = await prisma.product.count({ where });
 
+    const productIds = products.map(p => p.id);
+    const ratingsAgg = await prisma.rating.groupBy({
+      by: ['productId'],
+      where: { productId: { in: productIds } },
+      _avg: { score: true },
+      _count: { score: true },
+    });
+
+    const ratingMap = new Map(ratingsAgg.map(r => [r.productId, {
+      averageRating: r._avg.score ?? 0,
+      totalRatings: r._count.score,
+    }]));
+
+    const productsWithRating = products.map(p => ({
+      ...p,
+      averageRating: ratingMap.get(p.id)?.averageRating ?? 0,
+      totalRatings: ratingMap.get(p.id)?.totalRatings ?? 0,
+    }));
+
     res.json({
-      products,
-      total,
-      page: pageNum,
-      totalPages: Math.ceil(total / limitNum)
+      success: true,
+      data: {
+        products: productsWithRating,
+        total,
+        page: pageNum,
+        totalPages: Math.ceil(total / limitNum)
+      }
     });
   } catch (error: any) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 

@@ -1,0 +1,25 @@
+# Session Timeout Specification
+
+## Purpose
+Configurable JWT token expiration and expired token rejection for GameStore.
+
+## Requirements
+
+### Requirement: Configurable Token Expiration
+The system SHALL support a configurable JWT expiration time via environment variable.
+
+#### Scenario: Default expiration applied
+- **WHEN** a user logs in and no `JWT_EXPIRES_IN` environment variable is set
+- **THEN** the token SHALL expire after 24 hours
+
+#### Scenario: Custom expiration applied
+- **WHEN** a user logs in and `JWT_EXPIRES_IN` is set to "1h"
+- **THEN** the token SHALL expire after 1 hour
+
+### Requirement: Expired Token Rejection
+The system SHALL reject requests with expired JWT tokens.
+
+#### Scenario: Expired token rejected
+- **WHEN** a request includes an expired JWT token
+- **THEN** the system SHALL return a 401 status code
+- **AND** the response SHALL include the error message "Token expired"

@@ -1,0 +1,38 @@
+name: gamestore-schema
+version: 1
+description: GameStore workflow with security review and domain-specific spec templates (auth, catalog, payments)
+
+artifacts:
+  - id: proposal
+    generates: proposal.md
+    description: Initial proposal document outlining the change
+    template: proposal.md
+    requires: []
+
+  - id: specs
+    generates: specs/**/*.md
+    description: Detailed specifications for the change
+    template: spec.md
+    requires: [proposal]
+
+  - id: design
+    generates: design.md
+    description: Technical design document with implementation details
+    template: design.md
+    requires: [proposal]
+
+  - id: security-review
+    generates: security-review.md
+    description: Security review checklist
+    template: security-review.md
+    requires: [design]
+
+  - id: tasks
+    generates: tasks.md
+    description: Implementation checklist with trackable tasks
+    template: tasks.md
+    requires: [specs, design, security-review]
+
+apply:
+  requires: [tasks]
+  tracks: tasks.md
