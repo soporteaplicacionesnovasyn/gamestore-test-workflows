@@ -10,6 +10,7 @@ import orderRoutes from './routes/orders';
 import adminRoutes from './routes/admin';
 import ratingRoutes from './routes/ratings';
 import reviewRoutes from './routes/reviews';
+import huskyTestRoutes from './routes/husky-test';
 
 const app = express();
 const PORT = 3001;
